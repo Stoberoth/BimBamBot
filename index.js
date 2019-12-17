@@ -119,5 +119,5 @@ function play(guild, song) {
 }
 
 
-client.login("NjUzMjc2ODk5NzQwNDgzNTg0.Xe0tBw.OFPA5WXiFHKZRIkFkQeJhUzPSmo");
+client.login(process.env.BOT_TOKEN);
 
