@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var prefix = "!";
 const ytdl = require('ytdl-core');
 
-client.login("NjUzMjc2ODk5NzQwNDgzNTg0.XflMSg.OnpPguup7HZOHRvTLYWOS-iTlN8");
+client.login(env.process.Token);
 
 const queue = new Map(); 
 
