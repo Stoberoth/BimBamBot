@@ -3,6 +3,7 @@ const client = new Discord.Client();
 var prefix = "!";
 const ytdl = require('ytdl-core');
 
+client.login("NjUzMjc2ODk5NzQwNDgzNTg0.XflMSg.OnpPguup7HZOHRvTLYWOS-iTlN8");
 
 const queue = new Map(); 
 
@@ -119,5 +120,5 @@ function play(guild, song) {
 }
 
 
-client.login(process.env.BOT_TOKEN);
+
 
