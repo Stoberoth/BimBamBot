@@ -3,7 +3,6 @@ const client = new Discord.Client();
 var prefix = "!";
 const ytdl = require('ytdl-core');
 
-client.login(env.process.Token);
 
 const queue = new Map(); 
 
@@ -90,12 +89,14 @@ function skip(message, serverQueue) {
 	if (!message.member.voiceChannel) return message.channel.send('You have to be in a voice channel to stop the music!');
 	if (!serverQueue) return message.channel.send('There is no song that I could skip!');
 	serverQueue.connection.dispatcher.end();
+	return message.channel.send("Music skip ! ");
 }
 
 function stop(message, serverQueue) {
 	if (!message.member.voiceChannel) return message.channel.send('You have to be in a voice channel to stop the music!');
 	serverQueue.songs = [];
 	serverQueue.connection.dispatcher.end();
+	return message.channel.send("Music stop ! ");
 }
 
 function play(guild, song) {
@@ -120,5 +121,5 @@ function play(guild, song) {
 }
 
 
-
+client.login("NjUzMjc2ODk5NzQwNDgzNTg0.XflMSg.OnpPguup7HZOHRvTLYWOS-iTlN8");
 
