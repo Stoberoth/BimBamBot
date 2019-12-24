@@ -121,5 +121,5 @@ function play(guild, song) {
 }
 
 
-client.login("NjUzMjc2ODk5NzQwNDgzNTg0.XflMSg.OnpPguup7HZOHRvTLYWOS-iTlN8");
+client.login();
 
